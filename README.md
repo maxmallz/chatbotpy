@@ -8,8 +8,6 @@ Node chatbot :3000 ──POST /agent/turn {history, content}──▶ chatbotpy 
 
 The Node chatbot (`../chatbot`) owns the UI and the chat history (`sessions`, `messages` in its MySQL on :3036). It sends the whole history on every turn, so chatbotpy keeps no state of its own.
 
-The step-0 code that talked to MySQL directly (datasource ping, schema analysis, the MySQL 9 compose file) is in [archive/step0-sql/](archive/step0-sql/). Nothing in `app/` imports it.
-
 ## Agent
 
 | Piece | File |

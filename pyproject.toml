@@ -29,4 +29,3 @@ asyncio_mode = "auto"
 testpaths = ["tests"]
 
 [tool.ruff.lint]
-exclude = ["archive"]
